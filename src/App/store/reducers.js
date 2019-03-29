@@ -1,15 +1,15 @@
-import initialState from './state';
+import initialState from './state'
 import {
     CHANGE_NOMINAL
-} from "./actions";
+} from "./actions"
 
-export default (state = initialState, {type, payload}) => {
+export default (state = initialState, { type, payload }) => {
    switch (type){
        case CHANGE_NOMINAL:
            return {
                ...state,
-               base:{
-                   value: payload
+               base: {
+                   value: payload.value
                }
            };
        default:
