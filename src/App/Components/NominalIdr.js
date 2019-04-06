@@ -21,7 +21,7 @@ class NominalIdr extends PureComponent{
                     onChange={(e) => changeNominal(e.target.value)}
                     className="form-control">
                 </input>
-            </div>
+            </div> 
         )
     }
 }
