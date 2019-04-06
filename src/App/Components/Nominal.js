@@ -1,31 +1,36 @@
-import React, { PureComponent } from 'react';
-import { connect } from 'react-redux';
-import { changeNominal } from "../store/actions";
+import React, { PureComponent } from 'react'
+import { connect } from 'react-redux'
+import { changeNominal } from "../store/actions"
 import mapStateToProps from '../utils/mapState'
 
-class NominalIdr extends PureComponent{
-    render(){
+class NominalIdr extends PureComponent {
+    render() {
         const {
             base: {
                 value
             },
             changeNominal
-        } = this.props;
+        } = this.props
+
         return (
             <div>
-                <label className=""><i>IDR Exchange</i></label>
+                <label>
+                    <i>IDR Exchange</i>
+                </label>
+
                 <input
                     type="number"
-                    value={value}
+                    className="form-control"
                     min="0"
-                    onChange={(e) => changeNominal(e.target.value)}
-                    className="form-control" />
-            </div> 
+                    value={value}
+                    onChange={changeNominal}
+                />
+            </div>
         )
     }
 }
 
-const mapState = mapStateToProps('app', ['base']);
-const mapActions = {changeNominal};
+const mapState = mapStateToProps('app', ['base'])
+const mapActions = { changeNominal }
 
 export default connect(mapState, mapActions) (NominalIdr)

@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import Nominal from './Components/Nominal';
-import Shards from './Components/Shards';
+import React, { Component } from 'react'
+import Nominal from './Components/Nominal'
+import Shards from './Components/Shards'
 
 class App extends Component {
     render() {

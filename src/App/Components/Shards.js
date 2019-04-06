@@ -1,30 +1,20 @@
-import React, { PureComponent } from 'react';
-import { connect } from "react-redux";
-import mapStateToProps from "../utils/mapState";
-import { IDR_SHARDS } from "../utils/constant";
+import React, { PureComponent } from 'react'
+import { connect } from "react-redux"
+import mapStateToProps from "../utils/mapState"
+import mapShards from "../utils/mapShards"
 
 class ShardsIdr extends PureComponent {
-    render(){
-        const {
-            base:{
-                value
-            }
-        } = this.props;
-        let tmp = parseInt(value) ? value : 0;
-        let val = IDR_SHARDS.map((e) => {
-            let mod = Math.floor(tmp / e);
-            if(mod > 0) tmp = tmp % e;
-            return {shard: e, count: mod}
-        });
-        if(tmp !==0 ) val.push({shard:'Difference', count: tmp});
+    render() {
+        const mappedShards = mapShards(this.props)
+
         return (
             <div>
                 <div className="row">
-                    {val.map(obj =>
-                        <div key={obj.shard} className={"col-md-3 shard__" + obj.shard}>
-                            <label>{obj.shard}</label>
+                    {mappedShards.map(shard =>
+                        <div key={shard.shard} className="col-md-3">
+                            <label>{shard.shard}</label>
                             <div className="one__hundred">
-                                {obj.count}
+                                {shard.count}
                             </div>
                         </div>
                     )}
@@ -33,5 +23,7 @@ class ShardsIdr extends PureComponent {
         )
     }
 }
-const mapState = mapStateToProps('app', ['base']);
+
+const mapState = mapStateToProps('app', ['base', 'shards'])
+
 export default connect(mapState) (ShardsIdr)
