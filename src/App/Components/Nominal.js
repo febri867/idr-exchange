@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
-import { changeNominal} from "../store/actions";
+import { changeNominal } from "../store/actions";
 import mapStateToProps from '../utils/mapState'
 
 class NominalIdr extends PureComponent{
@@ -19,8 +19,7 @@ class NominalIdr extends PureComponent{
                     value={value}
                     min="0"
                     onChange={(e) => changeNominal(e.target.value)}
-                    className="form-control">
-                </input>
+                    className="form-control" />
             </div> 
         )
     }

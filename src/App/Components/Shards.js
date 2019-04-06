@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
-import {connect} from "react-redux";
+import { connect } from "react-redux";
 import mapStateToProps from "../utils/mapState";
-import {IDR_SHARDS} from "../utils/constant";
+import { IDR_SHARDS } from "../utils/constant";
 
 class ShardsIdr extends PureComponent {
     render(){
