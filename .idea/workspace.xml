@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ff47559-3fbd-4dc2-a347-a3dc0fbc1e22" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/App/utils/formatNumber.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/App/utils/validInputs.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/src/App/Components/Nominal.js" afterPath="$PROJECT_DIR$/src/App/Components/Nominal.js" />
-      <change beforePath="$PROJECT_DIR$/src/App/Components/Shards.js" afterPath="$PROJECT_DIR$/src/App/Components/Shards.js" />
-      <change beforePath="$PROJECT_DIR$/src/App/store/state.js" afterPath="$PROJECT_DIR$/src/App/store/state.js" />
-      <change beforePath="$PROJECT_DIR$/src/App/utils/mapShards.js" afterPath="$PROJECT_DIR$/src/App/utils/mapShards.js" />
-      <change beforePath="$PROJECT_DIR$/src/Styles/_index.scss" afterPath="$PROJECT_DIR$/src/Styles/_index.scss" />
-      <change beforePath="$PROJECT_DIR$/src/Styles/_spinner.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" afterPath="$PROJECT_DIR$/src/index.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -362,7 +352,7 @@
       <workItem from="1555111627225" duration="1694000" />
       <workItem from="1556927585354" duration="877000" />
       <workItem from="1557555435384" duration="1531000" />
-      <workItem from="1557670802980" duration="4531000" />
+      <workItem from="1557670802980" duration="4571000" />
     </task>
     <task id="LOCAL-00001" summary="add component">
       <created>1553791440529</created>
@@ -392,11 +382,18 @@
       <option name="project" value="LOCAL" />
       <updated>1554566923867</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update">
+      <created>1557675348888</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1557675348888</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44761000" />
+    <option name="totallyTimeSpent" value="44801000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
