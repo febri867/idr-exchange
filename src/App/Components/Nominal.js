@@ -19,7 +19,6 @@ class NominalIdr extends PureComponent {
                 </label>
 
                 <input
-                    type="number"
                     className="form-control"
                     min="0"
                     value={value}

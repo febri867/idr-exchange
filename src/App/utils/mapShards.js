@@ -1,3 +1,5 @@
+import validInput from './validInputs'
+
 function mapShards(data) {
     const {
         base: {
@@ -5,9 +7,7 @@ function mapShards(data) {
         },
         shards
     } = data
-
-    let baseValue = parseInt(value) || 0
-
+    let baseValue = validInput(value)
     const mappedShards = shards.map((e) => {
         const mod = Math.floor(baseValue / e)
         if (mod > 0) baseValue = baseValue % e
@@ -19,7 +19,7 @@ function mapShards(data) {
     })
 
     if (baseValue) mappedShards.push({
-        shard:'Difference',
+        shard:'-',
         count: baseValue
     })
 

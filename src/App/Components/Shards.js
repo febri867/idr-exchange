@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react'
 import { connect } from "react-redux"
 import mapStateToProps from "../utils/mapState"
 import mapShards from "../utils/mapShards"
+import { formatNumber } from "../utils/formatNumber";
 
 class ShardsIdr extends PureComponent {
     render() {
@@ -11,10 +12,10 @@ class ShardsIdr extends PureComponent {
             <div>
                 <div className="row">
                     {mappedShards.map(shard =>
-                        <div key={shard.shard} className="col-md-3">
-                            <label>{shard.shard}</label>
-                            <div className="one__hundred">
-                                {shard.count}
+                        <div key={shard.shard} className="col-md-4">
+                            <div className="box">
+                                <label>Rp {formatNumber(shard.shard)}</label>
+                                <h3><sup>x</sup>{formatNumber(shard.count)}</h3>
                             </div>
                         </div>
                     )}

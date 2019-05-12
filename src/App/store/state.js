@@ -1,6 +1,7 @@
 export default {
     base: {
-        value: 0
+        value: "0",
+        is_valid: true
     },
     shards: [
         100000,
